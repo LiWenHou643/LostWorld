@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 1918291269}
   - component: {fileID: 1918291268}
   - component: {fileID: 1918291267}
+  - component: {fileID: 1918291270}
   m_Layer: 0
   m_Name: Soldier_0
   m_TagString: Untagged
@@ -446,8 +447,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e39082c27118303468159c3a042aa059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMoment
-  speed: 5
+  speed: 1
+  facingDirection: 1
   rb: {fileID: 1918291268}
+  animator: {fileID: 1918291270}
 --- !u!50 &1918291268
 Rigidbody2D:
   serializedVersion: 5
@@ -512,6 +515,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0.00143902, y: 0.022623613}
   m_Size: {x: 0.12055421, y: 0.2053931}
   m_Direction: 0
+--- !u!95 &1918291270
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918291264}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6bb3ec0c037471a4ba4be9357f96badd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
